@@ -1,1 +1,0 @@
-/home/vifelix/.config/omarchy/current/theme/neovim.lua
