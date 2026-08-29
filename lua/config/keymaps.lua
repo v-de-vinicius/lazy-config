@@ -12,6 +12,11 @@ map("n", "<M-j>", ":resize -2<CR>", { desc = "Diminuir altura" })
 map("n", "<M-=>", "<C-w>=", { desc = "Igualar tamanho das janelas" })
 map("n", "<leader>q", ":bd<CR>", { desc = "Fechar buffer" })
 
+-- Format manual
+map("n", "<leader>cf", function()
+  require("conform").format({ async = true, lsp_fallback = true })
+end, { desc = "Format file" })
+
 -- Jdtls Keymaps
 map("n", "<leader>rn", vim.lsp.buf.rename, { desc = "Rename variable" })
 -- map("v", "<leader>em", "<Esc><Cmd>lua require('jdtls').extract_method(true)<CR>", { desc = "Extract Method" })

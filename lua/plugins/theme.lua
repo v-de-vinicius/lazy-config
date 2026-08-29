@@ -17,8 +17,8 @@ return {
         italic_comments = true,
         -- Enable editor background transparency.
         transparent = {
-          bg = false,
-          float = false,
+          bg = true,
+          float = true,
         },
         -- Enable brighter float border.
         bright_border = false,
